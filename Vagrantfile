@@ -73,7 +73,7 @@ cd redis-stable
 make
 sudo cp src/redis-server /usr/local/bin/
 sudo cp src/redis-cli /usr/local/bin/
-
+sudo rm -rf /home/vagrant/redis*
 
 SCRIPT
 
@@ -93,6 +93,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.provision :shell, inline: $script, privileged: false
   #end
 
-  # config.vm.synced_folder "./spectator", "~/spectator"
+  config.vm.synced_folder "./projects", "/home/vagrant/projects"
 
 end
