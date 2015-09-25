@@ -67,15 +67,12 @@ sudo apt-get install nodejs -y
 # rbenv rehash
 
 # Install Redis
-wget http://download.redis.io/releases/redis-stable.tar.gz
-tar xzf redis-stable.tar.gz
+wget http://download.redis.io/redis-stable.tar.gz
+tar xvzf redis-stable.tar.gz
 cd redis-stable
 make
-make test
-sudo make install
-cd utils
-sudo ./install_server.sh
-# Use sudo service redis_6379 start to start redis
+sudo cp src/redis-server /usr/local/bin/
+sudo cp src/redis-cli /usr/local/bin/
 
 
 SCRIPT
