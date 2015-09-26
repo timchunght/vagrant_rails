@@ -9,7 +9,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "ubuntu/trusty64"
 
   config.vm.box       = "spec-rails"
-  config.vm.box_url   = "https://www.dropbox.com/s/ur9nfpa83qy9gqq/spec-rails.box?dl=1"
+  config.vm.box_url   = "https://s3.amazonaws.com/vm-box/spec-rails.box"
 
   config.vm.network :forwarded_port, guest: 3000, host: 3000
 
