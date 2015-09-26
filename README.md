@@ -1,4 +1,7 @@
-clone this directory and cd into it
+###Setup your Rails Environment with Postgres and Redis Using Vagrant in less than 10 minutes
+---
+
+clone this project and ``cd`` into it:
 
   git clone https://github.com/timchunght/vagrant_rails
   cd vagrant_rails
@@ -6,11 +9,11 @@ clone this directory and cd into it
 
 Wait for installation to finish, and run:
 
-	vagrant ssh
+  vagrant ssh
 
 You are now inside the VM (ubuntu 14.04)
 
-	cd projects
+  cd projects
 
 Great, your environment is now setup.
 
