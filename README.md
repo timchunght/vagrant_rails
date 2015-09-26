@@ -3,17 +3,17 @@
 
 clone this project and ``cd`` into it:
 
-  git clone https://github.com/timchunght/vagrant_rails
-  cd vagrant_rails
-  vagrant up
+	git clone https://github.com/timchunght/vagrant_rails
+	cd vagrant_rails
+	vagrant up
 
 Wait for installation to finish, and run:
 
-  vagrant ssh
+	vagrant ssh
 
 You are now inside the VM (ubuntu 14.04)
 
-  cd projects
+	cd projects
 
 Great, your environment is now setup.
 
