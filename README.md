@@ -15,6 +15,10 @@ You are now inside the VM (ubuntu 14.04)
 
 	cd projects
 
+For the first time, paste this in:
+	
+	echo "source $HOME/.rvm/scripts/rvm" >> ~/.bash_profile
+	
 Great, your environment is now setup.
 
 Please DO NOT change the folder name of ``projects`` and make sure all your rails projects are inside the ``projects`` directory. This way, all changes made using your local machine will be synced inside the VM. This means that you can use your favourite editor to edit files on your host machine and have them reflected instantly inside the VM.
